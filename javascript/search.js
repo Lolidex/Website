@@ -1,4 +1,7 @@
-$('#search_loli_button').on('click', function (e) {
-    var loliname = document.getElementById("search_loliname").value;
-    alert("Searching loli named: \"" + loliname + "\"");
+
+var search_bar = document.getElementById("search_loliname");
+
+$('#search_loli_button').on('click', function () {
+    var loliname = search_bar.value;
+    location.replace("lolisearch.html");
 })
