@@ -1,9 +1,10 @@
 
-function Loli(name, age, hair_color, height, weight, place_of_birth, _3sizes, blood_type, source, image_url, description)
+function Loli(name, age, hair_color, eyes_color, height, weight, place_of_birth, _3sizes, blood_type, source, image_url, description)
 {
     this.name = name;
     this.age = age;
     this.hair_color = hair_color;
+    this.eyes_color = eyes_color;
     this.height = height;
     this.weight = weight;
     this.place_of_birth = place_of_birth;

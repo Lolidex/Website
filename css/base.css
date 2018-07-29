@@ -11,6 +11,18 @@
     width: 50vh;
 }
 
+.lolimage {
+    height: 100%;
+    width: auto;
+    background: #ffffff;
+    border: 1px solid grey;
+}
+
+.lolist {
+    background: #ffffff;
+    height: 100%;
+}
+
 body {
     background-color: #fdf5e6;
 }
