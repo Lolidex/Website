@@ -1,16 +1,21 @@
 
-function Loli(name, age, hair_color, eyes_color, height, weight, place_of_birth, _3sizes, blood_type, source, image_url, description)
+function Character(name, translatedname, nickname, isloli, rating, birthdate, height, weight, sizes, birthplace, bloodtype, source, image, description, haircolor, lefteyecolor, righteyecolor)
 {
     this.name = name;
-    this.age = age;
-    this.hair_color = hair_color;
-    this.eyes_color = eyes_color;
+    this.translatedname = translatedname;
+    this.nickname = nickname;
+    this.isloli = isloli;
+    this.rating = rating;
+    this.birthdate = birthdate;
     this.height = height;
     this.weight = weight;
-    this.place_of_birth = place_of_birth;
-    this._3sizes = _3sizes;
-    this.blood_type = blood_type;
+    this.sizes = sizes;
+    this.birthplace = birthplace;
+    this.bloodtype = bloodtype;
     this.source = source;
-    this.image_url = image_url;
+    this.image = image;
     this.description = description;
+    this.haircolor = haircolor;
+    this.lefteyecolor = lefteyecolor;
+    this.righteyecolor = righteyecolor;
 }
