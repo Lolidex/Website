@@ -9,6 +9,12 @@
     right: 5vw;
     height: auto;
     width: 50vh;
+
+    /* prevents the user from dragging the image in multiple browsers */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .lolimage {
@@ -21,6 +27,10 @@
 .lolist {
     background: #ffffff;
     height: 100%;
+}
+
+.search-btn {
+    margin-left: 10px;
 }
 
 body {

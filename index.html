@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="icon" href="ressources/favicon.png">
-        <title>Lolidex</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" href="resources/favicon.png">
+    <title>Lolidex</title>
 </head>
+
 <body>
-        <img class="lolidown" src="ressources/lolish.png"></div>
-        <div class="container">
-                <div class="row justify-content-center hcenter">
-                        <div class="col-12 col-md-10 col-lg-8">
-                                <form class="card card-sm">
-                                        <div class="card-body row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                        <i class="fas fa-search h4 text-body"></i>
-                                                </div>
-                                                <div class="col">
-                                                        <input class="form-control form-control-lg form-control-borderless" id="search_loliname" type="search" placeholder="Search a loli by name">
-                                                </div>
-                                                <div class="col-auto">
-                                                        <button class="btn btn-lg btn-success" type="submit" id="search_loli_button">Search</button>
-                                                </div>
-                                        </div>
-                                </form>
+    <img class="lolidown" src="resources/lolish.png" />
+
+    <div class="container">
+        <div class="row justify-content-center hcenter">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form method="GET" action="lolisearch.html" class="card card-sm">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col">
+                            <input class="form-control form-control-lg form-control-borderless" autocomplete="off" required name="name" type="text" placeholder="Search a loli by name">
                         </div>
-                </div>
+                        <div class="col-auto search-btn">
+                            <input class="btn btn-lg btn-success" value="Search" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="javascript/loliclass.js"></script>
-        <script src="javascript/search.js"></script>
+    </div>
 </body>
+
 </html>
