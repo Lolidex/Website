@@ -58,9 +58,11 @@
 
                                 return
                             }
+                        
 
                             window.location = "lolisearch.html?name=" + this.name
                         })
+                        .catch(x => this.error = "Couldn't connect to server, please try again later!")
                 }
             }
         })
