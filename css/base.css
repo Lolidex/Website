@@ -33,6 +33,10 @@
     margin-left: 10px;
 }
 
+.search-error {
+    margin-top: 10px;
+}
+
 body {
     background-color: #fdf5e6;
 }
