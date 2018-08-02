@@ -1,7 +1,4 @@
 
-var loli_dummy = new Character("Illyasviel von Einzbern", null, null, true, 0, null, null, null, "B61 W47 H62", "Germany", null, "Fate", "https://vignette.wikia.nocookie.net/typemoon/images/6/6f/PrismaIllyaUniform.png/revision/latest?cb=20160229201545", "Often referred as \"Illya\", she is the master of \"Berserker\" in the Fifth Holy Grail War of Fate/stay night. She is the daughter of Kiritsugu Emiya and Irisviel von Einzbern, both whom participated in the Fourth Holy Grail War, and the adoptive older sister of Shirou Emiya.", null, null, null);
-var json_string = JSON.stringify(loli_dummy);
-
 function add_list_component(lolist, block_name, data)
 {
     if (data == null)
@@ -11,7 +8,16 @@ function add_list_component(lolist, block_name, data)
 
 function fill_document ()
 {
-    var loli = JSON.parse(json_string);
+    var xmlhttp = new XMLHttpRequest();
+    var loli;
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            loli = JSON.parse(this.responseText).characters[0];
+        }
+    };
+    xmlhttp.open("GET", "http://localhost:8888/search?name=" + new URL(window.location.href).searchParams.get("name"), false);
+    xmlhttp.send();
     var lolist = document.getElementById("lolist");
 
     document.getElementById("lolimage").src = loli.image;
